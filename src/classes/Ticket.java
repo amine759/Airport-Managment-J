@@ -12,6 +12,7 @@ public class Ticket {
         this.setTicket(ticketId);
         this.setFlightID(flightId);
         this.setPrice(Price);
+        
     }   
 
     public int getTicketId() {

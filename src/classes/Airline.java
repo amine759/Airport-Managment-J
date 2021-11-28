@@ -5,9 +5,10 @@ public class Airline{
     private String airlineName;
     private String Country; 
 
-    public Airline(int airlineID, String airlineName){
+    public Airline(int airlineID, String airlineName, String country){
         this.setAirlineID(airlineID);
         this.setAirlineName(airlineName);
+        this.setCountry(country);
         
     }
 
