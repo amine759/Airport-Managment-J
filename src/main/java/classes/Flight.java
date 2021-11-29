@@ -24,7 +24,7 @@ public class Flight {
 
     /** Constructors */
     public Flight() {
-    };
+    }
 
     public Flight(int flightID, String source, String destination, String departString, String arrivingString,
             Airline airline, Airport airport, Airplane airplane, Pilot pilot) throws ParseException {
