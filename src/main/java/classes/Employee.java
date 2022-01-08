@@ -2,6 +2,8 @@ package classes;
 
 public class Employee extends Person {
     private String job;
+    private int salary;
+    private String password;
     //Constructor
 
     //default Constructor
@@ -14,15 +16,19 @@ public class Employee extends Person {
         this.job = job;
     }
 
-
-    public Employee(int id, String name, int age, String nationality) {
-        super(id, name, age, nationality);
-    }
-
     public Employee(int id, String name) {
         super(id, name);
     }
 
+    public Employee(String name, int age, String gender, String nationality, String job) {
+        super(name,age,gender,nationality);
+        this.job = job;
+    }
+    public Employee(int id, String name, int salary, String password) {
+        super(id, name);
+        this.salary = salary;
+        this.password=password;
+    }
     public String getJob() {
         return job;
     }
@@ -30,53 +36,20 @@ public class Employee extends Person {
     public void setJob(String job) {
         this.job = job;
     }
-
-}
-
-/*
-public class Employee{
-
-    private int id;
-    private String name;
-    private String job;
-
-    //default Constructor
-    public Employee(){
-
+    public int getSalary() {
+        return salary;
     }
-    //Constructor
-    public Employee(int id, String name, String job){
-        this.id=id;
-        this.name=name;
-        this.job=job;
+    public String getPassword() {
+        return password;
     }
-    //setters
-    public void setId(int id) {
-        this.id = id;
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
-
-    public void setJob(String job) {
-        this.job = job;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    //getters
-    public int getId() {
-        return id;
-    }
-
-    public String getJob() {
-        return job;
-    }
-
-    public String getName() {
-        return name;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
-*/
+
 
 
 
